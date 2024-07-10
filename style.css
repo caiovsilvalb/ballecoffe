@@ -1,0 +1,79 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
+
+:root {
+    --marrom-escuro: #181012;
+    --marrom-medio: #1F1517;
+    --marrom-claro: #23181A;
+    --branco: #FFFFFF;
+    --branco-transparente: #fff2e77c;
+    --cor-apresentacao: #A45A49;
+    --cinza-claro: #C7BAB3;
+    --montserrat: 'Montserrat', sans-serif;
+    --inter: 'Inter', sans-serif;
+    --epilogue: 'Epilogue', sans-serif;
+    --teko: 'Teko', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--marrom-medio);
+    display: flex;
+    padding: 1.5em 0;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+   
+    
+}
+
+.logo {
+    padding: 0 10em;
+    color: var(--branco);
+    text-transform: uppercase;
+    font-family: var(--teko);
+    font-weight: 600;
+    font-size: 32px;
+    
+} 
+
+.nav {
+   
+    
+}
+
+.nav__lista {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    
+}
+
+.nav__item {
+    list-style-type: none;
+}
+
+.nav__link {
+    color: var(--branco-transparente);
+    text-decoration: none;
+    font-family: var(--inter);
+    font-size: 16px;
+}
+
+.nav__home {
+    color: var(--branco);
+}
+
+.nav__link__github {
+    margin-left: 19.3em;
+    color: var(--branco);
+    text-decoration: none;
+    font-family: var(--inter);
+    font-weight: 600;
+    font-size: 16px;
+}
