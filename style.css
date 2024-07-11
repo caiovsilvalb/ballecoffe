@@ -18,62 +18,118 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+}
+
+body {
+
 }
 
 header {
     background-color: var(--marrom-medio);
+}
+
+.header__container {
     display: flex;
-    padding: 1.5em 0;
-    width: 100vw;
-    text-align: center;
+    justify-content: space-around;
     align-items: center;
-   
-    
+    padding: 1em 0;
 }
 
 .logo {
-    padding: 0 10em;
     color: var(--branco);
-    text-transform: uppercase;
     font-family: var(--teko);
-    font-weight: 600;
     font-size: 32px;
-    
-} 
-
-.nav {
-   
-    
-}
-
-.nav__lista {
-    display: flex;
-    justify-content: center;
-    gap: 1.5em;
-    
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .nav__item {
+    display: flex;
+    gap: 2em;
     list-style-type: none;
 }
 
 .nav__link {
+    text-decoration: none;
     color: var(--branco-transparente);
-    text-decoration: none;
-    font-family: var(--inter);
-    font-size: 16px;
 }
 
-.nav__home {
+.github {
+    text-decoration: none;
     color: var(--branco);
 }
 
-.nav__link__github {
-    margin-left: 19.3em;
-    color: var(--branco);
-    text-decoration: none;
-    font-family: var(--inter);
-    font-weight: 600;
-    font-size: 16px;
+.banner__marrom-escuro {
+    background-color: var(--marrom-escuro);
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    align-items: center;
+    overflow: clip; 
+    height: 24.125em;
 }
+
+.banner__container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    
+}
+
+.banner__destaque {
+    color: var(--cor-apresentacao);
+    text-transform: uppercase;
+    font-family: var(--epilogue);
+    font-size: 1em;
+    font-weight: 350;
+}
+
+.banner__titulo {
+    color: var(--branco);
+    font-size: 3.5em;
+    font-family: var(--montserrat);
+    font-weight: 800;
+    line-height: 120%;
+}
+
+hr {
+    border-color: var(--cor-apresentacao);
+    width: 15em;
+}
+
+.banner__texto {
+    color: var(--cinza-claro);
+    font-family: var(--inter);
+    font-size: 1.25em;
+    line-height: 156%;
+}
+
+.banner__botao {
+   background-color: ;
+   width: 3.5em;
+   height: 3.5em;
+   background-color: var(--cor-apresentacao);
+   border: 1px solid var(--cor-apresentacao);
+   border-radius: 8px;
+    
+}
+
+.banner__container2 {
+    column-count: 4;
+    max-width: 45%;
+    column-gap: 1em;
+    margin: -1em;
+    
+}
+
+.banner__container2 > figure > img {
+    width: 100%;
+    border-radius: 0.5em;
+    
+}
+
+
+
+
+
