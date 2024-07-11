@@ -4,9 +4,13 @@
 :root {
     --marrom-escuro: #181012;
     --marrom-medio: #1F1517;
+    --marrom-card: #241A1C;
     --marrom-claro: #23181A;
+    --cor-card: #251a1c;
     --branco: #FFFFFF;
+    --branco-titulo: #FFF2E7;
     --branco-transparente: #fff2e77c;
+    --feedback: #756A67;
     --cor-apresentacao: #A45A49;
     --cinza-claro: #C7BAB3;
     --montserrat: 'Montserrat', sans-serif;
@@ -22,7 +26,7 @@
 }
 
 body {
-
+    background-color: var(--marrom-medio);
 }
 
 .header__principal {
@@ -54,11 +58,15 @@ body {
 .nav__link {
     text-decoration: none;
     color: var(--branco-transparente);
+    font-family: var(--inter);
+    font-size: 1em;
+    font-weight: 400;
 }
 
 .github {
     text-decoration: none;
     color: var(--branco);
+    font-family: var(--inter);
 }
 
 .principal {
@@ -147,7 +155,151 @@ button {
     background: var(--cor-apresentacao);
 }
 
+.receitas {
+   
+    display: flex;
+    flex-direction: column;
+    max-width: 70em;
+    padding: 3em 2em;
+    margin: auto;
+    
+}
 
+.receitas__cabecalho {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5em;
+   
+    
+}
+
+.receitas__destaque {
+    font-size: 1em;
+    font-family: var(--epilogue);
+    font-weight: 350;
+    text-transform: uppercase;
+    color: var(--cor-apresentacao);
+}
+
+.receitas__titulo {
+    font-size: 2em;
+    font-family: var(--montserrat);
+    font-weight: 700;
+    color: var(--branco);
+    line-height: 120%;
+}
+
+.receitas__texto {
+    color: var(--cinza-claro);
+    font-size: 1em;
+    font-family: var(--inter);
+    font-weight: 500;
+    line-height: 148%;
+
+}
+
+.card__container {
+    padding: 1.5em;
+    margin: 2em 0 0 0;
+    width: 35em;
+    height: 11.6em;
+    background-color: var(--marrom-claro);
+    border-radius: 0.5em;
+    
+}
+
+.card__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    
+}
+
+.card__column {
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+
+.card__destaque {
+    color: #E7A80E;
+    font-size: 1em;
+    font-family: var(--epilogue);
+    font-weight: 350;
+    text-transform: uppercase;
+}
+
+.card__titulo {
+    font-size: 1.25em;
+    font-family: var(--montserrat);
+    font-weight: 700;
+    color: var(--branco-titulo);
+    line-height: 120%;
+    letter-spacing: -2%;
+    
+}
+
+.card__feedback {
+    font-family: var(--inter);
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--feedback);
+    line-height: 132%;
+}
+
+.card__texto {
+    font-size: 1em;
+    font-family: var(--inter);
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--cinza-claro);
+    margin-top: 1em;
+}
+
+.card__perfil-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+    margin: 2em 0 0 0;
+}
+
+.card__usuario {
+    font-size: 1em;
+    font-family: var(--inter);
+    font-weight: 500;
+    color: var(--cinza-claro);
+}
+
+.colunas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 72em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    background-color: var(--marrom-claro);
+    
+    height: 25vh;
+}
+
+footer > p {
+    text-align: center;
+    color: var(--branco-transparente);
+   
+}
+
+.paragrafo__branco {
+    color: var(--branco);
+}
 
 
 
