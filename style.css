@@ -18,14 +18,14 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box; 
 }
 
 body {
 
 }
 
-header {
+.header__principal {
     background-color: var(--marrom-medio);
 }
 
@@ -34,6 +34,7 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 1em 0;
+    /* max-width: 1120px; */
 }
 
 .logo {
@@ -60,82 +61,96 @@ header {
     color: var(--branco);
 }
 
-
-
-.banner__marrom-escuro {
+.principal {
     background-color: var(--marrom-escuro);
-    display: flex;
-    justify-content: center;
-    gap: 3em;
-    align-items: center;
-    overflow: clip; 
-    height: 24.125em;
 }
 
-.banner__container1 {
+.banner__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6em;
+    
+    max-width: 70em; 
+    height: 45vh;
+    padding: 0 2em;
+    margin: auto;
+    overflow: clip;
+    align-items: center;
+}
+
+.banner__marrom-escuro {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    
+    justify-content: center;
 }
 
+/* .banner__coluna {
+    display: flex;
+    
+} */
+
 .banner__destaque {
-    color: var(--cor-apresentacao);
     text-transform: uppercase;
-    font-family: var(--epilogue);
     font-size: 1em;
+    font-family: var(--epilogue);
     font-weight: 350;
+    color: var(--cor-apresentacao);
 }
 
 .banner__titulo {
-    color: var(--branco);
-    font-size: 3.5em;
     font-family: var(--montserrat);
+    font-size: 3.5em;
     font-weight: 800;
+    color: var(--branco);
     line-height: 120%;
+    text-align: left;
 }
 
 hr {
     border-color: var(--cor-apresentacao);
-    width: 15em;
 }
 
 .banner__texto {
-    color: var(--cinza-claro);
     font-family: var(--inter);
     font-size: 1.25em;
+    color: var(--cinza-claro);
     line-height: 156%;
+    text-align: left;
 }
 
-.banner__botao {
-   background-color: transparent;
-   border: transparent;
-   width: 3.5em;
-   height: 3.5em;
-   margin-left: 33em;
-   padding-bottom: 2em;
-  
-   
-    
-}
-
-.banner__botao > img {
-    
-}
-
-.banner__container2 {
+.banner__imagem {
     column-count: 4;
     max-width: 45%;
     column-gap: 1em;
     margin: -1em;
-    
 }
 
-.banner__container2 > figure > img {
+.banner__imagem > figure > img {
     width: 100%;
     border-radius: 0.5em;
-    
 }
+
+.botao__container {
+    width: 100%;
+    max-width: 70em;
+    
+    margin: auto;
+    transform: translate("0, -50%");
+}
+
+button {
+    border: none;
+    padding: 1em;
+    border-radius: 0.5em;
+    background: var(--cor-apresentacao);
+}
+
+
+
+
+
 
 
 

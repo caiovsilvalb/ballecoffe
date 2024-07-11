@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="header__principal">
         <section class="header__container">
             <span class="logo">Ballecoffe</span>
             <nav>
@@ -31,17 +31,15 @@
     </header>
 
     <main>
-        
-            <header class="banner__marrom-escuro">
-                <section class="banner__container1">
+        <div class="principal">
+            <section class="banner__container">
+                <header class="banner__marrom-escuro banner__coluna">
                     <span class="banner__destaque">novidade</span>
                     <h1 class="banner__titulo">Encontre a <br>receita perfeita!</h1>
                     <hr/>
                     <p class="banner__texto">Explore dezenas de variações da bebida favorita <br> entre os devs ao redor mundo!</p>
-            
-                </section>
-        
-                <section class="banner__container2">
+                </header>
+                <div class="banner__imagem">
                     <figure><img src="assets/imagem1.png" alt=""></figure>
                     <figure><img src="assets/imagem2.png" alt=""></figure>
                     <figure><img src="assets/imagem3.png" alt=""></figure>
@@ -54,13 +52,44 @@
                     <figure><img src="assets/imagem10.png" alt=""></figure>
                     <figure><img src="assets/imagem11.png" alt=""></figure>
                     <figure><img src="assets/imagem12.png" alt=""></figure>
-                </section>
+                </div>
+            </section>
+        </div>
+        
+        <section class="botao__container">
+            <button type="button">
+                <img src="assets/chevrons-down.svg" alt="botao para ver mais conteúdos dentro do site">
+            </button>
+        </section>
 
-        </header>
+        <section>
+            <header>
+                <span>Receitas</span>
+                <h2>Confira as últimas receitas</h2>
+                <p>Dê uma olhada nas receitas mais amadas!</p>
+            </header>
+            <div>
+                <header>
+                    <div>
+                        <span>EM ALTA &#x1F525;</span>
+                        <h3>Cappuccino</h3>
+                    </div>
+                    <p>Extraordinário · 4/4 </p>
+                </header>
+                <p>Uma bebida ideal para os amantes de doce e cremosidade. &#x1F60D;</p>
+                <div>
+                    <img src="assets/Avatar.svg" alt="foto de perfil da usuaria do site chamada Rafaella Ballerini">
+                    <span>Rafaella Ballerini</span>
+                </div>
+            </div>
+        </section>
 
-        <button type="button" class="banner__botao">
-            <img src="assets/Button.svg" alt="botao para ver mais conteúdos dentro do site">
-        </button>
     </main>
+
+
+    <footer>
+        <p>Copyright &lt;CODEFEE /&gt; 2023</p>
+        <p>Feito por Caio Victor Silva Albuquerque</p>
+    </footer>
 </body>
 </html>
