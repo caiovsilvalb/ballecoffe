@@ -60,6 +60,8 @@ header {
     color: var(--branco);
 }
 
+
+
 .banner__marrom-escuro {
     background-color: var(--marrom-escuro);
     display: flex;
@@ -106,12 +108,18 @@ hr {
 }
 
 .banner__botao {
-   background-color: ;
+   background-color: transparent;
+   border: transparent;
    width: 3.5em;
    height: 3.5em;
-   background-color: var(--cor-apresentacao);
-   border: 1px solid var(--cor-apresentacao);
-   border-radius: 8px;
+   margin-left: 33em;
+   padding-bottom: 2em;
+  
+   
+    
+}
+
+.banner__botao > img {
     
 }
 
