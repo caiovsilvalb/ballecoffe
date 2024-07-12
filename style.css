@@ -148,14 +148,19 @@ hr {
     border-radius: 0.5em;
 }
 
+.div__botao {
+    position: absolute;
+    top: 50%;
+}
+
 .botao__container {
     width: 100%;
     max-width: 70em;
     margin: auto;
     transform: translate("0, -50%");
-    position: absolute;
-    top: 50%;
-    left: 27em;
+    position: relative;
+    margin-left: 26.7em;
+    
     
 }
 
@@ -164,6 +169,8 @@ button {
     padding: 1em;
     border-radius: 0.5em;
     background: var(--cor-apresentacao);
+    
+    
     
 }
 
@@ -314,6 +321,31 @@ footer > p {
 }
 
 
+@media screen and (max-width: 1600px) {
+    .div__botao {
+        position: absolute;
+        top: 50%;
+    }
+
+    .botao__container {
+        position: relative;
+        right: 34%;
+    }
+
+
+}
+
+@media screen and (max-width: 1440px) {
+    .div__botao {
+        position: absolute;
+        top: 52%;
+    }
+
+    .botao__container {
+        position: relative;
+        margin-right: 13.5em;
+    }
+}
 
 
 
